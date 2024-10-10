@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0ffff; /* Light teal background */
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff; /* White background for content */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation effects */
+}
+
+.about-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.about-title {
+    text-align: center;
+    color: #ff6f61; /* Coral color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #333;
+    margin-bottom: 15px;
+    padding: 10px 0; /* Padding for text spacing */
+}
+
+.about-text strong {
+    color: #007bff; /* Highlighted text color */
+}
+
+/* Colorful sections with light pastel backgrounds */
+.about-section {
+    background-color: #f9c2c2; /* Light red */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.about-section:nth-child(2) {
+    background-color: #c2e1f9; /* Light blue */
+}
+
+.about-section:nth-child(3) {
+    background-color: #f9e1c2; /* Light orange */
+}
+
+.about-section:nth-child(4) {
+    background-color: #d4c2f9; /* Light purple */
+}
+
+/* Add a responsive design for smaller screens */
+@media (max-width: 600px) {
+    .about-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
